@@ -21,8 +21,8 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## TO-DO
-'''bash
+```bash
 - Progate npm
 - Progate scss
 - 基礎から始めるVue.js
-'''
+```
