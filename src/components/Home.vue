@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <typing-button></typing-button>
+    <typing-button></typing-button>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -84,12 +86,16 @@
 </template>
 
 <script>
+import TypingButton from './TypingButton.vue'
 export default {
   name: 'Home',
   data () {
     return {
       msg: 'Welcome to Ming'
     }
+  },
+  components: {
+    TypingButton
   }
 }
 </script>

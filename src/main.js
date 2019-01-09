@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import TypingButton from './components/TypingButton.vue'
 
 Vue.config.productionTip = false
 
