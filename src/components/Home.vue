@@ -85,10 +85,10 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Ming'
     }
   }
 }
@@ -108,6 +108,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: skyblue;
 }
 </style>
