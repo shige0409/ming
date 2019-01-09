@@ -14,6 +14,9 @@ export default {
                 'python': 'python',
             }
         }
+    },
+    props: {
+        
     }
 }
 </script>
@@ -32,3 +35,12 @@ a {
     line-height: 100px;
 }
 </style>
+
+<style lang="scss" scoped>
+.typeCircle {
+    a{
+    color: red;
+    }
+}
+</style>
+
