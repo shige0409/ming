@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/ming.png">
+    <router-link to='/'>
+      <img src="./assets/ming.png">
+    </router-link>
     <router-view/>
   </div>
 </template>

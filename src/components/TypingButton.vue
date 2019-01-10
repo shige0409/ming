@@ -1,6 +1,6 @@
 <template>
     <div class="typeCircle">
-        <a href="">typing</a>
+        <router-link v-bind:to="url">{{ kind }}</router-link> 
     </div>
 </template>
 
@@ -9,37 +9,28 @@ export default {
     name: 'TypingButton',
     data() {
         return {
-            list: {
-                'linux': 'linux',
-                'python': 'python',
-            }
+            message: "this is button",
         }
     },
     props: {
-        
+        id: Number,
+        kind: String,
+        url: String
     }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .typeCircle {
     width: 100px;
     height: 100px;
+    margin: 20px;
     display: inline-block;
     border-radius: 50%;
     background-color: aquamarine;
-    text-align: center;
-}
-
-a {
-    line-height: 100px;
-}
-</style>
-
-<style lang="scss" scoped>
-.typeCircle {
     a{
-    color: red;
+        color: red;
+        line-height: 100px;
     }
 }
 </style>

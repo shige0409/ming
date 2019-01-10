@@ -1,8 +1,12 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <typing-button></typing-button>
-    <typing-button></typing-button>
+    <TypingButton 
+      v-for="item in list"
+      v-bind:key="item.id"
+      v-bind:kind="item.kind"
+      v-bind:url="item.url">
+    </TypingButton>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -56,7 +60,11 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Welcome to Ming'
+      msg: 'Welcome to ming',
+      list: [
+        { id: 1, kind: 'linux', url: '/linux'},
+        { id: 2, kind: 'c', url: '/c'}
+      ]
     }
   },
   components: {
