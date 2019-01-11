@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/ming.png">
+    <router-link to='/'>
+      <img src="./assets/ming.png">
+    </router-link>
     <router-view/>
   </div>
 </template>
@@ -20,4 +22,33 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+input {
+  width: 40%;
+  height: 25px;
+  border: 1px solid #d6d6d4;
+}
+body {
+	text-align: center;
+	color: #fff;
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
 </style>

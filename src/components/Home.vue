@@ -1,6 +1,12 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <TypingButton 
+      v-for="item in list"
+      v-bind:key="item.id"
+      v-bind:kind="item.kind"
+      v-bind:url="item.url">
+    </TypingButton>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -19,77 +25,27 @@
           Forum
         </a>
       </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
       <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
     </ul>
   </div>
 </template>
 
 <script>
+import TypingButton from './TypingButton.vue'
 export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Welcome to Ming'
+      msg: 'Welcome to ming',
+      list: [
+        { id: 1, kind: 'linux', url: '/typing/linux'},
+        { id: 2, kind: 'c', url: '/typing/c'},
+        { id: 3, kind: 'html', url: '/tping/html'}
+      ]
     }
+  },
+  components: {
+    TypingButton
   }
 }
 </script>
