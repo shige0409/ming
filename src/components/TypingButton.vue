@@ -29,8 +29,8 @@ export default {
     border-radius: 50%;
     background-color: aquamarine;
     a{
-        color: red;
         line-height: 100px;
+        font-size: 1.5em;
     }
 }
 </style>

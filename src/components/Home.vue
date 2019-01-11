@@ -25,31 +25,7 @@
           Forum
         </a>
       </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
       <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
     </ul>
   </div>
 </template>
@@ -62,8 +38,9 @@ export default {
     return {
       msg: 'Welcome to ming',
       list: [
-        { id: 1, kind: 'linux', url: '/linux'},
-        { id: 2, kind: 'c', url: '/c'}
+        { id: 1, kind: 'linux', url: '/typing/linux'},
+        { id: 2, kind: 'c', url: '/typing/c'},
+        { id: 3, kind: 'html', url: '/tping/html'}
       ]
     }
   },
